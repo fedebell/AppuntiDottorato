@@ -1,0 +1,21 @@
+Consigli da Roma
+
+- plottare la mediana (outlier)
+- vedere i plot dei due errori scorporati
+- errore sulla media e non sulla sigma o errore asimmetrico? Dividere per un radice di n (?)
+
+- Nicolò dice che se usiamo la mediana si applica comunque asintoticamente il CR bound. Perché asintoticamente vale la local asymtotic normality (cioè è tutto gaussiano), quindi media e mediana coincidono (questo argomento non mi convience troppo). Per calcolare l'errore sulla mediana si potrebbe usare il jackknife o il bootstrap.
+
+- Posso usare il bootstrap anche per estrarre l'errore sull'errore (estraggo con ripetizione da un insieme di 50 ripetizioni eseguite)
+
+- E' studido ripete la misura molte volte, perché l'algoritmo di Granade è già fatto per dare l'errore. Quindi conviene usare quello con un numero alto di particelle 10000-20000 particelle.
+
+- Non uso il bound di Van Trees, perché dovei prendere il valore di aspettazione anche sulle visibilità, cosa che non ha senso perché io uso 
+
+- E' possibile dire che con il Bernstein-von Mises theorem raggiungo il CR bound asintoticamente?
+
+- Si può prendere come stimatore la mediana della posterior invece che la media?
+
+- Le idee dei Romani mi fanno solo perdere tempo. Farò a mio modo mio usando molte particelle per una singola eseguzione dell'algoritmo e confrontando i MSE con il CR bound.
+
+Idea: multiparameter bayesian quantum parameter estimation with many visibilities and a phase, confrontiamo con il CR bound (che non è detto cche sia raggiungibile).

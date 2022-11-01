@@ -1,0 +1,11 @@
+-Dovrei fare le simulazioni per 2*\theta (tra 0 e 2*\pi) e non per \theta (tra 0 e \pi).
+-E' corretto usare le prior uniformi? Per la fase la prior più corretta sarebbe forse la distributione di von Mises. Le visibilità sono strettamente contenute in [0, 1], per quets
+-Aggiungo manualmente la correzione al bound (regolarizzazione) data dal fatto che parto da un priore uniforme. A differenza di quello che pensavo non può essere fatat rientrare automaticamente nel bound di van Trees.
+-Nel file di Mathematica bisogna integrare le funzioni evitando di passare attraverso discontinuità del risultato dell'integrale. Quando ho queste discontinuità , Mathematica inserisce delle costanti a caso che non riesco bene a controllare.
+-Uso il metodo dei moltiplicatori di Lagrange per ottimizzare in \nu, dovrei ottenere delle espressioni ababstanza semplici. Trovo delle espressioni non intere per nu, che poi approssimo per eccesso (in modo da evere un lower bound)
+-Ha senso calcolare il bound per la distribuzione esatta di fotoni che l'algoritmo sceglie? Forse no, perché la distribuzione di fotoni è quello che voglio testare, quindi usando la distribuzione vera nel bound otterrei un bound davvero tight (proviamo).
+-Forse non è il caso di introdurre la correzione al CR bound per piccoli valori di N.
+-Non metto la varianza della distribuzione uniforme come bound (modifica del bound) ma aggiungo solo un commento
+-Si è argomentato che una distribuzione uniforme non va bene, è da evitare, in particolare il rpoblema sono gli sharp boundaries. Ma una distr. uniforme non ha sharp boundaries se  su un dominio periodico. La distr uniforme è un caso particolare di von Mises distr. La visibilità è limitata in [0, 1], non ha senso che sia altrimenti (è come un coeff di correlazione, non ha senso che sia non in [-1, 1]).
+
+

@@ -1,0 +1,11 @@
+OFFLINE ALGORITHM
+-Use the script 'iterativeExtraction.m' to produce the simulation of teh experiment. 
+-Prepare a file 'sfile' containing the charges of the q-plates. These charges sould be also chaged accordingly in the script 'iterativeEstimation.m'
+-Run the script 'iterativeEstimation.m'
+-Run the script 'dataVisualizationIterative.m, it will produce a file 'iterative' which will be the input of the script 'dataAnalysis.m' and 'dataAnalysisFast.m'
+
+ONLINE ALGORITHM
+-Run the script 'bayesianEstimation.m' or 'bayesianEstimationfast.m'.
+
+DATA ANALYSIS 
+-Run the script 'dataAnalysis.m' and 'dataAnalysisFast.m' after having produced a file 'iterative'.

@@ -1,0 +1,88 @@
+100000 particles
+
+N = 30
+
+With resampling:
+
+1: 8
+2: 4
+4: 6
+8: 3
+16: 3
+32: 3
+64: 3
+Total number of used resources: 400
+Ratio error/piHS: 0.2014
+Ratio error/SQL: 0.031636
+---------------------------
+cos: 13
+sin: 17
+---------------------------
+Estimator: 0.99842
+True Value: 1
+
+Without resampling:
+
+1: 6
+2: 4
+4: 5
+8: 3
+16: 4
+32: 3
+64: 5
+Total number of used resources: 538
+Ratio error/piHS: 1.0938
+Ratio error/SQL: 0.14815
+---------------------------
+cos: 12
+sin: 18
+---------------------------
+Estimator: 0.99361
+True Value: 1
+
+
+5000 particles
+
+N = 200
+
+Without resampling:
+
+1: 11
+2: 8
+4: 5
+8: 3
+16: 8
+32: 5
+64: 160
+Total number of used resources: 10599
+Ratio error/piHS: 6.3825
+Ratio error/SQL: 0.19476
+---------------------------
+cos: 107
+sin: 93
+---------------------------
+Estimator: 0.99811
+True Value: 1
+
+With resampling:
+
+1: 5
+2: 3
+4: 6
+8: 3
+16: 6
+32: 5
+64: 172
+Total number of used resources: 11323
+Ratio error/piHS: 4.8287
+Ratio error/SQL: 0.14256
+---------------------------
+cos: 101
+sin: 99
+---------------------------
+Estimator: 1.0013
+True Value: 1
+
+N = 100
+resampling yes
+npart = 500;

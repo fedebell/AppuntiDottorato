@@ -1,0 +1,15 @@
+The scripts bayesianEstimation.m and dataAnalysis.m have to be executed in their folder. The script bayesianEstimation.m contains the Bayesian phase estimation procedure. The main function is
+
+[est, totResources] = adaptiveBayesian(numParticles, sizeSpace, N, a, resample_threshold, Q, numGuesses, theta, s, phases, debug);
+
+which performs an estimation of the true angle "theta", with number of particles equal to "numParticles", using circa "N" total resources. The variables "sizeSpace", "a", "resample_threshold", and "numGuesses" are internal settings of the algorithm and should be modified only if you known what your are doing, otherwise the default values should be left. The variable "Q" is the weight matrix for the covariance in the utility function, its dafault value means that we treat the visibilities as nuisance parameters. The vector "s" contains the possible q-plates charges, while "phases" contains the possible phases of the polarization measurements on the photons. The variable "debug" can be either 0 or 1, if it is 1 a plot and some output are printed at the end of the estimation.
+The outcome "est" is the estimator of the angle "theta", and "totResources" is the actual total number of resources used (which will be slightly greater than N).
+
+The main function is called in line 38 of bayesianEstimation.m. If you want to reproduce the plots reported in the pdf, you should comment line 38 and decomment from line 48 to line 81. The algorithm will then produce a multidimentional array "results", which will also be saved in the data file results.mat. If the variable "result" is loaded in the memory then running the script dataAnalysis.m will process the data and plot the precision.
+
+The function experimentSimulation in bayesianEstimation.m contains the visibilities of the q-plates. Here they can be changed. This function is also the one to modify if we want to use the actual measured data.
+
+In the file midVis are contained the results of the iterative phase estimation algorithm.
+
+In the folder data, we have three files Fig1.mat, Fig2.mat, Fig3.mat which contain respectively the variable "results" needed to reprodice the plots of Fig.1, Fig.2, and Fig.3 of the pdf, when loaded into Matlab.
+

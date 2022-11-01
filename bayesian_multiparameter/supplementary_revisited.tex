@@ -1,0 +1,245 @@
+\documentclass[superscriptaddress,notitlepage,pra]{revtex4-1}
+
+
+\usepackage[utf8]{inputenc}
+%\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{braket}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{bm}% bold math
+\usepackage{soul}%\st{}
+\usepackage{pifont}
+\renewcommand{\thesection}{\arabic{section}}
+\usepackage{titlesec}
+\titleformat{\section}
+{\normalfont\bfseries\centering}{Supplementary Note~\thesection.}{1em}{}
+
+\renewcommand{\thetable}{\arabic{table}}
+\renewcommand{\tablename}{Supplementary Table}
+
+\renewcommand{\figurename}{Supplementary Figure}
+
+%\usepackage{caption}
+%\captionsetup[figure]{name={Supplementary Figure},labelsep=period}
+
+
+
+\def\bibsection{\section*{Supplementary References}} 
+
+\usepackage{tikz}
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;} 
+\newcommand{\cmark}{\ding{51}}
+\newcommand{\xmark}{\ding{55}}%
+
+\begin{document}
+
+\title{Supplementary information for Optimizing quantum-enhanced Bayesian multiparameter estimation in noisy apparata}
+
+
+\author{Federico Belliardo}
+\affiliation{NEST, Scuola Normale Superiore and Istituto Nanoscienze-CNR, I-56126 Pisa, Italy}
+
+\author{Valeria Cimini}
+\affiliation{Dipartimento di Fisica, Sapienza Universit\`{a} di Roma, Piazzale Aldo Moro 5, I-00185 Roma, Italy}
+
+\author{Emanuele Polino}
+\affiliation{Dipartimento di Fisica, Sapienza Universit\`{a} di Roma, Piazzale Aldo Moro 5, I-00185 Roma, Italy}
+
+\author{Francesco Hoch}
+\affiliation{Dipartimento di Fisica, Sapienza Universit\`{a} di Roma, Piazzale Aldo Moro 5, I-00185 Roma, Italy}
+
+\author{Bruno Piccirillo}
+\affiliation{Department of Physics ``E. Pancini'', Universit\'a di Napoli ``Federico II'', Complesso Universitario MSA, via Cintia, 80126, Napoli}
+
+\author{Nicol\`o Spagnolo}
+\affiliation{Dipartimento di Fisica, Sapienza Universit\`{a} di Roma, Piazzale Aldo Moro 5, I-00185 Roma, Italy}
+
+\author{Vittorio Giovannetti}
+\email{vittorio.giovannetti@sns.it}
+\affiliation{NEST, Scuola Normale Superiore and Istituto Nanoscienze-CNR, I-56126 Pisa, Italy}
+
+\author{Fabio Sciarrino}
+\email{fabio.sciarrino@uniroma1.it}
+\affiliation{Dipartimento di Fisica, Sapienza Universit\`{a} di Roma, Piazzale Aldo Moro 5, I-00185 Roma, Italy}
+
+\maketitle
+
+\section{Derivation of multiparameter precision bounds}
+
+In this section, we derive the multiparameter precision bound of Eq.~(2) in the main text. In order to do so, we 
+start from the quantity that we simulate, that are the measurements outcomes. The greedy algorithm selects for each photon consumed in the experiment the best value of $s$ among the available ones and the polarization basis $b$ that give us the maximum information gain. We called $\boldsymbol{r}_N$ the list of tuples containing these choices, together with the outcomes $o$ i.e.
+%
+\begin{equation}
+    \boldsymbol{r}_N = \lbrace (s_1, b_1, o_1), (s_2, b_2, o_2), \cdots, (s_K, b_K, o_K) \rbrace \; ,
+\end{equation}
+%
+Notice that the number of total resources used $N$ and the number of measurements $K$, i.e. the number of photons are different. The most widely employed figure of merit for the precision of an estimator is the Mean Squared Error (MSE). Given the estimators $\hat{\theta}^{(\boldsymbol{r}_N)}$ and $\hat{V}^{(\boldsymbol{r}_N)}_{s_i}$ for $\theta$ and $V_{s_i}$ respectively, and a weight matrix $G$ that codifies which parameters are of interests, we have introduced in the main text the error quantity
+%
+\begin{equation}
+    \Delta^2_{\boldsymbol{r}_N, G} (\theta) := G_{1,1}|\hat{\theta}^{({\mathbf r}_N)}-\theta|^2 + \sum_{i=1}^4 G_{i+1\, , i+1} |\hat{V}^{({\mathbf r}_N)}_{s_i}-V_{s_i}|^2 \; ,
+\end{equation}
+%
+its expectation value on the experimental run is $\Delta^2_G (\theta) := \mathbb{E}_{\boldsymbol{r}_N} [\Delta^2_{\boldsymbol{r}_N, G} (\theta)]$. We then take the expectation value of this precision on the prior distribution for $\theta$ and define $\Delta^2_G := \mathbb{E}_{\theta} [\Delta^2_{G} (\theta)]$. We can approximate these expressions by means of $M$ simulations for a discrete and finite number of angles $J$. So that we can write
+%
+\begin{equation}
+    \Delta^2_G \simeq \frac{1}{MJ} \sum_{m=1}^{M} \sum_{j=1}^J \Delta^2_{\boldsymbol{r}_N^{m, j}, G} (\theta_j) \; , 
+\end{equation}
+%
+where ${\boldsymbol{r}_N^{m, j}}$ is the string characterizing the $m$-th experimental run for the $j$-th angle. The figure of merit in Eq.~(1) of the main text is computed by taking the median of the $M$ quantities $\sum_{j=1}^J \Delta^2_{\boldsymbol{r}_N^{m, j}, G} (\theta_j)$ instead of the mean. We now see how the Cramèr-Rao (CR) bound sets a limit to $\Delta^2_G$ and how this can become a bound for the median error $\mathcal{M}_G^2$. Depending on the measurement basis chosen, the results $o_1, o_2 \in \lbrace -1, +1 \rbrace$ of the two polarization measurements for the $i-$th q-plate are distributed respectively according to 
+%
+\begin{equation}
+    p_1(o_1 | \theta, V_{s_i}) := \frac{1}{2} \left(1 + o_1 \cdot V_{s_i} \cos 2 s_i \theta \right) \; \quad \text{or} \quad p_2(o_2 | \theta, V_{s_i}) := \frac{1}{2} \left( 1 + o_2 \cdot V_{s_i} \sin 2 s_i \theta \right) \; .
+\end{equation}
+%
+We have $\nu_i$ measurements for the q-plate $s_i$ in total, that we assume being evenly split between the two polarization basis. This is not true in the experiment, since the basis is chosen adaptively, however it is an assumption necessary to proceed in the analytical computation of the bound. From these probabilities we can write the $5 \times 5$ Fisher information matrix $I$ (FI matrix) for the five parameters $(\theta, V_{s_1}, V_{s_2}, V_{s_3}, V_{s_4})$, whose non-zero elements are 
+%
+\begin{align*}
+    I_{11} &= \sum_{i=1}^4 \frac{4 s_i^2 V_{s_i}^2 \nu_i \left( -4 + 3 V_{s_i}^2 + V_{s_i}^2 \cos 4 s_i \theta \right)}{-8 + 8 V_{s_i}^2 -V_{s_i}^4 +V_{s_i}^4 \cos 4 s_i \theta} \; ,\\
+    I_{i+1, 1} &= -\frac{4 s_i V_{s_i}^3 \nu_i \cot 2 s_i \theta}{(V_{s_i}^2 - \csc ^2 s_i \theta)(V_{s_i}^2 -\sec ^2 s_i \theta)} \; , \\
+    I_{i+1, i+1} &= 2 \nu_i \left( \frac{1}{-V_{s_i}^2 + \csc^2 s_i \theta} + \frac{1}{-V_{s_i}^2 + \sec^2 s_i \theta}\right) \; ,
+\end{align*}
+%
+for $i=1, 2, 3, 4$, and $I_{i+1, 1} = I_{1, i+1}$ for symmetry. The Cramér-Rao bound, holding true for asymptotically unbiased estimators, is then expressed by the following inequality involving $\Delta^2_G (\theta)$:
+%
+\begin{equation}
+    \Delta^2_G (\theta) \ge \text{Tr} \left( G \cdot I^{-1} \right) \; ,
+\end{equation}
+%
+by taking the expectation value on the prior on $\theta$ we have
+%
+\begin{equation}
+    \Delta^2_G = \mathbb{E}_\theta [\Delta^2_G (\theta)] \ge \mathbb{E}_\theta [\text{Tr} \left( G \cdot I^{-1} \right)] \ge \text{Tr} \left( G \cdot \mathbb{E}_\theta[I]^{-1} \right) \; .
+    \label{eq:cr_bound_minimize}
+\end{equation}
+%
+We now want to renormalize the uses of each q-plate $\nu_i$ in such a way to highlight the dependence on the total number of resources $N$, i.e. $\nu_i = x_i N$. The FI matrix $I$ becomes $I = N \widetilde{I}$, where the entries of $\widetilde{I}$ are similar to that of $I$, only that $\nu_i$ is substituted with $x_i$. The CR bound reads now
+%
+\begin{equation}
+    \Delta^2_G \ge \frac{\text{Tr} \left( G \cdot \mathbb{E}_\theta[\widetilde{I}]^{-1} \right)}{N} \ge  \frac{C_G}{N}\; ,
+\end{equation}
+%
+where the expectation value of the matrix $\widetilde{I}$ is diagonal with entries
+%
+\begin{eqnarray}
+    \mathbb{E}_\theta [\widetilde{I}_{11}] &=& 4 \sum_{i=1}^4 x_i s_i^2 \left( 1 - \sqrt{1-V_{s_i}^2}\right) \; , \\
+	\label{eq:averagePhase}
+	\mathbb{E}_\theta [\widetilde{I}_{i+1, i+1}] &=& \frac{4 x_i \left( 1 - \sqrt{1-V_{s_i}^2} \right)}{V_{s_i}^2 \sqrt{1-V_{s_i}^2}}\, , \quad \text{for} \; i=1, \dots, 4 \; ,
+	\label{eq:averageVisibilities}
+\end{eqnarray}
+%
+and $C_G$ is the solution of the following minimization problem:
+%
+\begin{equation}
+	\begin{cases}
+	C_G = \min_{x_i} \text{Tr} \left( G \cdot \mathbb{E}_\theta [\widetilde{I}]^{-1} \right)\\
+	\text{subject to} \; \sum_{i=1}^4 s_i x_i = 1 \\
+	x_i \ge 0 
+	\end{cases}\\
+	\; .
+\label{eq:semidefinite}
+\end{equation}
+%
+In order to get a reference value for the median error, we suppose that the estimators $\hat{\theta}^{(\boldsymbol{r}_N)}$ and $\hat{V}^{(\boldsymbol{r}_N)}_{s_i}$ are asymptotically normal and unbiased. Because the square of the deviations $|\hat{\theta}^{({\mathbf r}_N)}-\theta_j|$ and $|\hat{V}_{s_i}^{({\mathbf r}_N)}-V_{s_i}|^2$ are left-skewed and independent variables, we observe that
+%
+\begin{eqnarray*}
+    \text{Median} \left[ \sum_{j=1}^J \Delta^2_{\boldsymbol{r}_N^{j}, G} (\theta_j) \right] \ge  \sum_{j=1}^J \text{Median} [|\hat{\theta}^{({\mathbf r}_N)}-\theta_j|^2] + \text{Median} [|\hat{V}_{s_i}^{({\mathbf r}_N)}-V_{s_i}|^2] \; .
+\end{eqnarray*}
+% 
+Under the said hypothesis, the variable $\hat{\theta}^{({\mathbf r}_N)}-\theta_j$ is a Gaussian centered in zero and the median of its square is proportional to the variance
+%
+\begin{equation}
+	\text{Median} \left[ |\hat{\theta}^{({\mathbf r}_N)}-\theta|^2 \right]= \xi \mathbb{E}_{\boldsymbol{r}_N} [ |\hat{\theta}^{({\mathbf r}_N)}-\theta|^2 ] \; ,
+	\label{eq:relationMedianMean}
+\end{equation}
+%
+with a factor $\xi \simeq 0.4549$ that can be estimated numerically. Therefore, the bound on the median error of the estimation is
+%
+\begin{equation}
+    \mathcal{M}^2_G \gtrapprox \frac{\xi C_G}{N} \; .
+	%\text{Median} \left[ \frac{1}{J} \sum_{j=1}^J  [|\hat{\theta}_j-\theta_j|^2 + |\hat{V}_j-V|^2] \right] \gtrapprox \frac{\xi C_G}{N} \; ,
+	\label{eq:medianCramer}
+\end{equation}
+%
+
+\section{The Bayesian algorithm}
+%
+In this section, we present the Bayesian algorithm proposed in~\cite{granade2012robust}, with the application to our q-plates setup in mind. With respect to the original formulation, we made a few corrections necessary because of the circular nature of the angular variable that we are going to measure. In every experiment, $n_p = 5000$ particles have been used. The parameters to estimate are collected in the vector $\boldsymbol{x} := \left( \theta, V_{s_1}, V_{s_2}, V_{s_3}, V_{s_4} \right)$, that contains the phase in the first entry and the four visibilities in the other ones. Being the Granade's method based on a particle filter, it represents internally the posterior probability distribution with the ensemble $\mathcal{E} := \lbrace \boldsymbol{x}^i, w^i \rbrace$, where $\boldsymbol{x}^i$ is the position of the $i$-th particle and $w^i$ its weight. The $j$-th component of the $i$-th particle of the ensemble will be represented as $x_j^i$, and could correspond to the phase if $j=0$, that is $x^i_0 = \theta^i$ or to one of the visibilities if $j=1, 2, 3, 4$, that is $x^i_j = V^i_{s_j}$. The mean of the angular values is computed as
+%
+\begin{equation}
+	\hat{\mu}_0 := \arg \left[ \sum_{i=1}^{n_{p}} w^i \exp \left( \mi \theta^i \right) \right] \; ,
+\end{equation}
+%
+while the mean values of the visibilities are
+%
+\begin{equation}
+	\hat{\mu}_j = \sum_{i=1}^{n_p} w^i V^i_{s_j} \; .
+\end{equation}
+%
+Together they form the vectorial mean of the distribution $\boldsymbol{\hat{\mu}} = (\hat{\mu}_0, \hat{\mu}_1, \hat{\mu}_2, \hat{\mu}_3, \hat{\mu}_4)$. The covariance matrix is defined as
+%
+\begin{equation}
+	\text{Cov}_{ij} := \sum_{k=1}^{n_{p}} w^k (x^k_i - \hat{\mu}_i)  (x^k_j - \hat{\mu}_j) \; .
+\end{equation}
+%
+If $i=1$ or $j=1$ then difference in $x^k_i - \hat{\mu}_i$ or $x^k_j - \hat{\mu}_j$ is actually the circular distance
+%
+\begin{equation}
+	d(x^k_i, \hat{\mu}_i) = \pi - | (x^k_i - \hat{\mu}_i) \mod 2 \pi - \pi| \; .
+\end{equation}
+%
+The Bayesian algorithm tries for each new experiment (each new photon sent with a specific q-plate activated) to minimize the scalar variance of the posterior distribution, that is
+%
+\begin{equation}
+	\sigma^2 := \text{Tr} \left[ G \cdot \text{Cov} \right] = \sum_{i, j} G_{ij} \text{Cov}_{ij} \; ,
+\end{equation}
+%
+by simulating each one of the possible $8$ experiments ($4$ q-plates and $2$ polarization basis among which we have to choose) and choosing the one with the lowest expected variance. In this way the algorithm attempts to concentrate as much as possible the distribution around its mean, without however planning for more than one step in the future. The simplest possible non-greedy extension of this would be to simulate two measurement steps, this would mean computing $64$ possible expected variances. Simulating many more steps becomes quickly unfeasible. The resampling strategy of the Granade procedure in~\cite{granade2012robust} has also undergone minor changes to adapt it to the phase estimation problem. 
+
+\subsection*{Details on the data analysis}
+\label{sec:details}
+%
+At difference with the offline algorithm when we run a simulation with a fixed number of photons we cannot exactly fix the total number $N$ of resources, because the stochastic nature of the measurement outcomes propagates to the choice of the next q-plate and therefore to $N$. However, we can repeat $M \gg 1$ times the simulation, collecting the precision after each used photon in the tuple $(\Delta_{{\boldsymbol{r}_n}, G}^2 (\theta_j), n)$, where $n$ is the total resource number used up to that point. We will then look at all the point with total resources falling in the interval $[n, n+\Delta n]$ with $\Delta n$ small, and the median error of this cluster is the error we associate to $n$. We call this operation clustering of the data, and we chose to cluster only the point having $n>100$. The chosen interval was $\Delta n = 50$. 
+%In principle, all the clusters we have built this way could contain a different number of data points, and this will make the error on $\mathcal{M}_G^2$ not comparable within the clusters. To solve this issue for each cluster we perform a resampling of the estimators, that means we sample $b'$ new points uniformly from points of the cluster with repetitions, so that they all have the same number of points in the end.
+The (asymmetric) confidence interval for the median of each total resources cluster is evaluated with a bootstrap procedure for a $99\%$ confidence level. 
+%The choice of $b$ must guarantee that in every cluster before the resampling there are at least $b' = 200$ points, so that the resampling doesn't artificially reduce the error on $\mathcal{M}_G^2$.
+
+\section{Values of the angles and the visibilities}
+\label{sec:values}
+%
+The value of the rotation angle is known from the mechanical platform on which the receiving end of the apparatus is mounted and the visibilities are computed from the non-Bayesian estimator
+%
+\begin{equation}
+    \hat{V} = \sqrt{\frac{\nu \left[ \left(2 f_0 -1 \right)^2 + (2 f_+ -1)^2 \right] -1}{\nu -1}} \; ,
+\end{equation}
+%
+where $f_0$ and $f_+$ are the frequencies of the outcomes $o=0$ and $o=+$ for the two polarization measurements for a fixed phase and q-plate, and $\nu$ is the number of experiments executed for each polarization. These estimators for the visibilities are evaluated prior and independently of the Bayesian procedure. The results will be considered the ``true'' values of the visibilities in evaluating the precision of the Bayesian approach. These are
+%
+\begin{center}
+    \begin{tabular}{ |c|c|c|c|c| } 
+    \hline
+    $\theta$ & $V_1$ & $V_2$ & $V_3$ & $V_4$\\
+    \hline
+    0.00235 & 0.8776 & 0.9091 & 0.8445 & 0.7038\\ 0.06145 & 0.9085 & 0.8934 & 0.8007 & 0.7611\\
+    0.38000 & 0.9399 & 0.9153 & 0.7936 & 0.7222\\
+    0.49620 & 0.9211 & 0.9315 & 0.7261 & 0.8186\\
+    1.6645 & 0.9331 & 0.8914 & 0.8691 & 0.7312\\
+    1.8750 & 0.9599 & 0.9081 & 0.8762 & 0.6618\\
+    2.5900 & 0.9187 & 0.9587 & 0.8775 & 0.6848\\
+    2.9600 & 0.8986 & 0.9321 & 0.8700 & 0.7528\\
+    - & 0.9197 & 0.9174 & 0.8322 & 0.7295\\
+    \hline
+    \end{tabular}
+    \label{tab:visibilities}
+\end{center}
+%
+The above table contains the values of the eight angles analyzed in the experiment and their corresponding visibilities for each q-plate configuration. The last line reports the mean values of the visibilities.
+
+\bibliography{biblio}
+\end{document}
+
