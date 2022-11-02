@@ -168,7 +168,7 @@ with a factor $\xi \simeq 0.4549$ that can be estimated numerically. Therefore, 
 In this section, we present the Bayesian algorithm proposed in~\cite{granade2012robust}, with the application to our q-plates setup in mind. With respect to the original formulation, we made a few corrections necessary because of the circular nature of the angular variable that we are going to measure. In every experiment, $n_p = 5000$ particles have been used. The parameters to estimate are collected in the vector $\boldsymbol{x} := \left( \theta, V_{s_1}, V_{s_2}, V_{s_3}, V_{s_4} \right)$, that contains the phase in the first entry and the four visibilities in the other ones. Being the Granade's method based on a particle filter, it represents internally the posterior probability distribution with the ensemble $\mathcal{E} := \lbrace \boldsymbol{x}^k, w^k \rbrace$, where $\boldsymbol{x}^k$ is the position of the $k$-th particle and $w^k$ its weight. The $j$-th component of the $k$-th particle of the ensemble will be represented as $x_j^k$, and could correspond to the phase if $j=0$, that is $x^k_0 = \theta^k$ or to one of the visibilities if $j=1, 2, 3, 4$, that is $x^k_j = V^k_{s_j}$. The mean of the angular values is computed as
 %
 \begin{equation}
-	\hat{\mu}_0 := \arg \left[ \sum_{i=1}^{n_{p}} w^k \exp \left( \iu \theta^k \right) \right] \; ,
+	\hat{\mu}_0 := \arg \left[ \sum_{i=1}^{n_{p}} w^k \exp \left( i \theta^k \right) \right] \; ,
 \end{equation}
 %
 while the mean values of the visibilities are
