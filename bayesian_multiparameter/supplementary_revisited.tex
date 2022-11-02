@@ -25,10 +25,6 @@
 
 \renewcommand{\figurename}{Supplementary Figure}
 
-%\usepackage{caption}
-%\captionsetup[figure]{name={Supplementary Figure},labelsep=period}
-
-
 
 \def\bibsection{\section*{Supplementary References}} 
 
@@ -169,16 +165,16 @@ with a factor $\xi \simeq 0.4549$ that can be estimated numerically. Therefore, 
 
 \section{The Bayesian algorithm}
 %
-In this section, we present the Bayesian algorithm proposed in~\cite{granade2012robust}, with the application to our q-plates setup in mind. With respect to the original formulation, we made a few corrections necessary because of the circular nature of the angular variable that we are going to measure. In every experiment, $n_p = 5000$ particles have been used. The parameters to estimate are collected in the vector $\boldsymbol{x} := \left( \theta, V_{s_1}, V_{s_2}, V_{s_3}, V_{s_4} \right)$, that contains the phase in the first entry and the four visibilities in the other ones. Being the Granade's method based on a particle filter, it represents internally the posterior probability distribution with the ensemble $\mathcal{E} := \lbrace \boldsymbol{x}^i, w^i \rbrace$, where $\boldsymbol{x}^i$ is the position of the $i$-th particle and $w^i$ its weight. The $j$-th component of the $i$-th particle of the ensemble will be represented as $x_j^i$, and could correspond to the phase if $j=0$, that is $x^i_0 = \theta^i$ or to one of the visibilities if $j=1, 2, 3, 4$, that is $x^i_j = V^i_{s_j}$. The mean of the angular values is computed as
+In this section, we present the Bayesian algorithm proposed in~\cite{granade2012robust}, with the application to our q-plates setup in mind. With respect to the original formulation, we made a few corrections necessary because of the circular nature of the angular variable that we are going to measure. In every experiment, $n_p = 5000$ particles have been used. The parameters to estimate are collected in the vector $\boldsymbol{x} := \left( \theta, V_{s_1}, V_{s_2}, V_{s_3}, V_{s_4} \right)$, that contains the phase in the first entry and the four visibilities in the other ones. Being the Granade's method based on a particle filter, it represents internally the posterior probability distribution with the ensemble $\mathcal{E} := \lbrace \boldsymbol{x}^k, w^k \rbrace$, where $\boldsymbol{x}^k$ is the position of the $k$-th particle and $w^k$ its weight. The $j$-th component of the $k$-th particle of the ensemble will be represented as $x_j^k$, and could correspond to the phase if $j=0$, that is $x^k_0 = \theta^k$ or to one of the visibilities if $j=1, 2, 3, 4$, that is $x^k_j = V^k_{s_j}$. The mean of the angular values is computed as
 %
 \begin{equation}
-	\hat{\mu}_0 := \arg \left[ \sum_{i=1}^{n_{p}} w^i \exp \left( \mi \theta^i \right) \right] \; ,
+	\hat{\mu}_0 := \arg \left[ \sum_{i=1}^{n_{p}} w^k \exp \left( \iu \theta^k \right) \right] \; ,
 \end{equation}
 %
 while the mean values of the visibilities are
 %
 \begin{equation}
-	\hat{\mu}_j = \sum_{i=1}^{n_p} w^i V^i_{s_j} \; .
+	\hat{\mu}_j = \sum_{k=1}^{n_p} w^k V^k_{s_j} \; .
 \end{equation}
 %
 Together they form the vectorial mean of the distribution $\boldsymbol{\hat{\mu}} = (\hat{\mu}_0, \hat{\mu}_1, \hat{\mu}_2, \hat{\mu}_3, \hat{\mu}_4)$. The covariance matrix is defined as
@@ -206,7 +202,6 @@ by simulating each one of the possible $8$ experiments ($4$ q-plates and $2$ pol
 %
 At difference with the offline algorithm when we run a simulation with a fixed number of photons we cannot exactly fix the total number $N$ of resources, because the stochastic nature of the measurement outcomes propagates to the choice of the next q-plate and therefore to $N$. However, we can repeat $M \gg 1$ times the simulation, collecting the precision after each used photon in the tuple $(\Delta_{{\boldsymbol{r}_n}, G}^2 (\theta_j), n)$, where $n$ is the total resource number used up to that point. We will then look at all the point with total resources falling in the interval $[n, n+\Delta n]$ with $\Delta n$ small, and the median error of this cluster is the error we associate to $n$. We call this operation clustering of the data, and we chose to cluster only the point having $n>100$. The chosen interval was $\Delta n = 50$. 
 %In principle, all the clusters we have built this way could contain a different number of data points, and this will make the error on $\mathcal{M}_G^2$ not comparable within the clusters. To solve this issue for each cluster we perform a resampling of the estimators, that means we sample $b'$ new points uniformly from points of the cluster with repetitions, so that they all have the same number of points in the end.
-The (asymmetric) confidence interval for the median of each total resources cluster is evaluated with a bootstrap procedure for a $99\%$ confidence level. 
 %The choice of $b$ must guarantee that in every cluster before the resampling there are at least $b' = 200$ points, so that the resampling doesn't artificially reduce the error on $\mathcal{M}_G^2$.
 
 \section{Values of the angles and the visibilities}

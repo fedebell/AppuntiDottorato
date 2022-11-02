@@ -1,0 +1,762 @@
+%merlin.mbs apsrev4-1.bst 2010-07-25 4.21a (PWD, AO, DPC) hacked
+%Control: key (0)
+%Control: author (8) initials jnrlst
+%Control: editor formatted (1) identically to author
+%Control: production of article title (-1) disabled
+%Control: page (0) single
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\begin{thebibliography}{60}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
+  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{http://dx.doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {Giovannetti}\ \emph {et~al.}(2004)\citenamefont
+  {Giovannetti}, \citenamefont {Lloyd},\ and\ \citenamefont
+  {Maccone}}]{Giovannetti1330}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {Giovannetti}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Lloyd}},
+  \ and\ \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Maccone}},\ }\href
+  {\doibase 10.1126/science.1104149} {\bibfield  {journal} {\bibinfo  {journal}
+  {Science}\ }\textbf {\bibinfo {volume} {306}},\ \bibinfo {pages} {1330}
+  (\bibinfo {year} {2004})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Giovannetti}\ \emph {et~al.}(2006)\citenamefont
+  {Giovannetti}, \citenamefont {Lloyd},\ and\ \citenamefont
+  {Maccone}}]{PhysRevLett.96.010401}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {Giovannetti}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Lloyd}},
+  \ and\ \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Maccone}},\ }\href
+  {\doibase 10.1103/PhysRevLett.96.010401} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {96}},\ \bibinfo
+  {pages} {010401} (\bibinfo {year} {2006})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Giovannetti}\ \emph {et~al.}(2011)\citenamefont
+  {Giovannetti}, \citenamefont {Lloyd},\ and\ \citenamefont
+  {Maccone}}]{Giovannetti}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {Giovannetti}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Lloyd}},
+  \ and\ \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Maccone}},\ }\href
+  {\doibase 10.1038/nphoton.2011.35} {\bibfield  {journal} {\bibinfo  {journal}
+  {Nat. Photonics}\ }\textbf {\bibinfo {volume} {5}},\ \bibinfo {pages} {222}
+  (\bibinfo {year} {2011})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Barbieri}(2022)}]{barbieri2022optical}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Barbieri}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {PRX
+  Quantum}\ }\textbf {\bibinfo {volume} {3}},\ \bibinfo {pages} {010202}
+  (\bibinfo {year} {2022})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Polino}\ \emph {et~al.}(2020)\citenamefont {Polino},
+  \citenamefont {Valeri}, \citenamefont {Spagnolo},\ and\ \citenamefont
+  {Sciarrino}}]{avsreview2020}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
+  {Polino}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Valeri}},
+  \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Spagnolo}}, \ and\
+  \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Sciarrino}},\ }\href
+  {\doibase 10.1116/5.0007577} {\bibfield  {journal} {\bibinfo  {journal} {AVS
+  Quantum Science}\ }\textbf {\bibinfo {volume} {2}},\ \bibinfo {pages}
+  {024703} (\bibinfo {year} {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Liu}\ \emph {et~al.}(2019)\citenamefont {Liu},
+  \citenamefont {Yuan}, \citenamefont {Lu},\ and\ \citenamefont
+  {Wang}}]{liu2019quantum}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Liu}}, \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Yuan}}, \bibinfo
+  {author} {\bibfnamefont {X.-M.}\ \bibnamefont {Lu}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {X.}~\bibnamefont {Wang}},\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {Journal of Physics A: Mathematical and
+  Theoretical}\ }\textbf {\bibinfo {volume} {53}},\ \bibinfo {pages} {023001}
+  (\bibinfo {year} {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Suzuki}\ \emph {et~al.}(2020)\citenamefont {Suzuki},
+  \citenamefont {Yang},\ and\ \citenamefont {Hayashi}}]{suzuki2020quantum}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Suzuki}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Yang}}, \ and\
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Hayashi}},\ }\href@noop
+  {} {\bibfield  {journal} {\bibinfo  {journal} {Journal of Physics A:
+  Mathematical and Theoretical}\ }\textbf {\bibinfo {volume} {53}},\ \bibinfo
+  {pages} {453001} (\bibinfo {year} {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Suzuki}(2020)}]{suzuki2020nuisance}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Suzuki}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Journal of Physics A: Mathematical and Theoretical}\ }\textbf {\bibinfo
+  {volume} {53}},\ \bibinfo {pages} {264001} (\bibinfo {year}
+  {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Magdalena}\ \emph {et~al.}(2016)\citenamefont
+  {Magdalena}, \citenamefont {Baumgratz},\ and\ \citenamefont
+  {Datta}}]{doi:10.1080/23746149.2016.1230476}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {Magdalena}}, \bibinfo
+  {author} {\bibfnamefont {T.}~\bibnamefont {Baumgratz}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {A.}~\bibnamefont {Datta}},\ }\href {\doibase
+  10.1080/23746149.2016.1230476} {\bibfield  {journal} {\bibinfo  {journal}
+  {Advances in Physics: X}\ }\textbf {\bibinfo {volume} {1}},\ \bibinfo {pages}
+  {621} (\bibinfo {year} {2016})},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1080/23746149.2016.1230476}
+  {https://doi.org/10.1080/23746149.2016.1230476} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Albarelli}\ \emph {et~al.}(2020)\citenamefont
+  {Albarelli}, \citenamefont {Barbieri}, \citenamefont {Genoni},\ and\
+  \citenamefont {Gianani}}]{albarelli2020perspective}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Albarelli}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Barbieri}},
+  \bibinfo {author} {\bibfnamefont {M.~G.}\ \bibnamefont {Genoni}}, \ and\
+  \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont {Gianani}},\ }\href@noop
+  {} {\bibfield  {journal} {\bibinfo  {journal} {Physics Letters A}\ }\textbf
+  {\bibinfo {volume} {384}},\ \bibinfo {pages} {126311} (\bibinfo {year}
+  {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Polino}\ \emph {et~al.}(2019)\citenamefont {Polino},
+  \citenamefont {Riva}, \citenamefont {Valeri}, \citenamefont {Silvestri},
+  \citenamefont {Corrielli}, \citenamefont {Crespi}, \citenamefont {Spagnolo},
+  \citenamefont {Osellame},\ and\ \citenamefont
+  {Sciarrino}}]{polino2019experimental}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
+  {Polino}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Riva}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Valeri}}, \bibinfo
+  {author} {\bibfnamefont {R.}~\bibnamefont {Silvestri}}, \bibinfo {author}
+  {\bibfnamefont {G.}~\bibnamefont {Corrielli}}, \bibinfo {author}
+  {\bibfnamefont {A.}~\bibnamefont {Crespi}}, \bibinfo {author} {\bibfnamefont
+  {N.}~\bibnamefont {Spagnolo}}, \bibinfo {author} {\bibfnamefont
+  {R.}~\bibnamefont {Osellame}}, \ and\ \bibinfo {author} {\bibfnamefont
+  {F.}~\bibnamefont {Sciarrino}},\ }\href@noop {} {\bibfield  {journal}
+  {\bibinfo  {journal} {Optica}\ }\textbf {\bibinfo {volume} {6}},\ \bibinfo
+  {pages} {288} (\bibinfo {year} {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Liu}\ \emph {et~al.}(2021)\citenamefont {Liu},
+  \citenamefont {Zhang}, \citenamefont {Li}, \citenamefont {Zhang},
+  \citenamefont {Yin}, \citenamefont {Fei}, \citenamefont {Li}, \citenamefont
+  {Liu}, \citenamefont {Xu}, \citenamefont {Chen} \emph
+  {et~al.}}]{liu2021distributed}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.-Z.}\ \bibnamefont
+  {Liu}}, \bibinfo {author} {\bibfnamefont {Y.-Z.}\ \bibnamefont {Zhang}},
+  \bibinfo {author} {\bibfnamefont {Z.-D.}\ \bibnamefont {Li}}, \bibinfo
+  {author} {\bibfnamefont {R.}~\bibnamefont {Zhang}}, \bibinfo {author}
+  {\bibfnamefont {X.-F.}\ \bibnamefont {Yin}}, \bibinfo {author} {\bibfnamefont
+  {Y.-Y.}\ \bibnamefont {Fei}}, \bibinfo {author} {\bibfnamefont
+  {L.}~\bibnamefont {Li}}, \bibinfo {author} {\bibfnamefont {N.-L.}\
+  \bibnamefont {Liu}}, \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Xu}}, \bibinfo {author} {\bibfnamefont {Y.-A.}\ \bibnamefont {Chen}},  \emph
+  {et~al.},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Nature
+  Photonics}\ }\textbf {\bibinfo {volume} {15}},\ \bibinfo {pages} {137}
+  (\bibinfo {year} {2021})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hong}\ \emph {et~al.}(2021)\citenamefont {Hong},
+  \citenamefont {Kim}, \citenamefont {Cho}, \citenamefont {Lee}, \citenamefont
+  {Jung}, \citenamefont {Moon}, \citenamefont {Han}, \citenamefont {Lim} \emph
+  {et~al.}}]{hong2021quantum}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Hong}}, \bibinfo {author} {\bibfnamefont {Y.-S.}\ \bibnamefont {Kim}},
+  \bibinfo {author} {\bibfnamefont {Y.-W.}\ \bibnamefont {Cho}}, \bibinfo
+  {author} {\bibfnamefont {S.-W.}\ \bibnamefont {Lee}}, \bibinfo {author}
+  {\bibfnamefont {H.}~\bibnamefont {Jung}}, \bibinfo {author} {\bibfnamefont
+  {S.}~\bibnamefont {Moon}}, \bibinfo {author} {\bibfnamefont {S.-W.}\
+  \bibnamefont {Han}}, \bibinfo {author} {\bibfnamefont {H.-T.}\ \bibnamefont
+  {Lim}},  \emph {et~al.},\ }\href@noop {} {\bibfield  {journal} {\bibinfo
+  {journal} {Nature communications}\ }\textbf {\bibinfo {volume} {12}},\
+  \bibinfo {pages} {1} (\bibinfo {year} {2021})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Valeri}\ \emph {et~al.}(2022)\citenamefont {Valeri},
+  \citenamefont {Cimini}, \citenamefont {Piacentini}, \citenamefont
+  {Ceccarelli}, \citenamefont {Polino}, \citenamefont {Hoch}, \citenamefont
+  {Bizzarri}, \citenamefont {Corrielli}, \citenamefont {Spagnolo},
+  \citenamefont {Osellame} \emph {et~al.}}]{valeri2022experimental}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Valeri}}, \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont {Cimini}},
+  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Piacentini}}, \bibinfo
+  {author} {\bibfnamefont {F.}~\bibnamefont {Ceccarelli}}, \bibinfo {author}
+  {\bibfnamefont {E.}~\bibnamefont {Polino}}, \bibinfo {author} {\bibfnamefont
+  {F.}~\bibnamefont {Hoch}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Bizzarri}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Corrielli}},
+  \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Spagnolo}}, \bibinfo
+  {author} {\bibfnamefont {R.}~\bibnamefont {Osellame}},  \emph {et~al.},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {arXiv preprint
+  arXiv:2208.14473}\ } (\bibinfo {year} {2022})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Cimini}\ \emph {et~al.}(2022)\citenamefont {Cimini},
+  \citenamefont {Valeri}, \citenamefont {Polino}, \citenamefont {Piacentini},
+  \citenamefont {Ceccarelli}, \citenamefont {Corrielli}, \citenamefont
+  {Spagnolo}, \citenamefont {Osellame},\ and\ \citenamefont
+  {Sciarrino}}]{cimini2022deep}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {Cimini}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Valeri}},
+  \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Polino}}, \bibinfo
+  {author} {\bibfnamefont {S.}~\bibnamefont {Piacentini}}, \bibinfo {author}
+  {\bibfnamefont {F.}~\bibnamefont {Ceccarelli}}, \bibinfo {author}
+  {\bibfnamefont {G.}~\bibnamefont {Corrielli}}, \bibinfo {author}
+  {\bibfnamefont {N.}~\bibnamefont {Spagnolo}}, \bibinfo {author}
+  {\bibfnamefont {R.}~\bibnamefont {Osellame}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {F.}~\bibnamefont {Sciarrino}},\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {arXiv preprint arXiv:2209.00671}\ } (\bibinfo
+  {year} {2022})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Humphreys}\ \emph {et~al.}(2013)\citenamefont
+  {Humphreys}, \citenamefont {Barbieri}, \citenamefont {Datta},\ and\
+  \citenamefont {Walmsley}}]{humphreys2013quantum}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~C.}\ \bibnamefont
+  {Humphreys}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Barbieri}},
+  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Datta}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {I.~A.}\ \bibnamefont {Walmsley}},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {Physical Review Letters}\
+  }\textbf {\bibinfo {volume} {111}},\ \bibinfo {pages} {070403} (\bibinfo
+  {year} {2013})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {G\'orecki}\ and\ \citenamefont
+  {Demkowicz-Dobrza\ifmmode~\acute{n}\else
+  \'{n}\fi{}ski}(2022)}]{PhysRevLett.128.040504}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.}~\bibnamefont
+  {G\'orecki}}\ and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Demkowicz-Dobrza\ifmmode~\acute{n}\else \'{n}\fi{}ski}},\ }\href {\doibase
+  10.1103/PhysRevLett.128.040504} {\bibfield  {journal} {\bibinfo  {journal}
+  {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {128}},\ \bibinfo {pages}
+  {040504} (\bibinfo {year} {2022})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Belliardo}\ and\ \citenamefont
+  {Giovannetti}(2021)}]{belliardo2021incompatibility}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Belliardo}}\ and\ \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {Giovannetti}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {New Journal of Physics}\ }\textbf {\bibinfo {volume} {23}},\ \bibinfo
+  {pages} {063055} (\bibinfo {year} {2021})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Yue}\ \emph {et~al.}(2014)\citenamefont {Yue},
+  \citenamefont {Zhang},\ and\ \citenamefont {Fan}}]{Yue}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.-D.}\ \bibnamefont
+  {Yue}}, \bibinfo {author} {\bibfnamefont {Y.-R.}\ \bibnamefont {Zhang}}, \
+  and\ \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Fan}},\ }\href
+  {\doibase 10.1038/srep05933} {\bibfield  {journal} {\bibinfo  {journal}
+  {Scientific Reports}\ }\textbf {\bibinfo {volume} {4}} (\bibinfo {year}
+  {2014}),\ 10.1038/srep05933}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Roccia}\ \emph {et~al.}(2018)\citenamefont {Roccia},
+  \citenamefont {Cimini}, \citenamefont {Sbroscia}, \citenamefont {Gianani},
+  \citenamefont {Ruggiero}, \citenamefont {Mancino}, \citenamefont {Genoni},
+  \citenamefont {Ricci},\ and\ \citenamefont {Barbieri}}]{Roccia:18}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
+  {Roccia}}, \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont {Cimini}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Sbroscia}}, \bibinfo
+  {author} {\bibfnamefont {I.}~\bibnamefont {Gianani}}, \bibinfo {author}
+  {\bibfnamefont {L.}~\bibnamefont {Ruggiero}}, \bibinfo {author}
+  {\bibfnamefont {L.}~\bibnamefont {Mancino}}, \bibinfo {author} {\bibfnamefont
+  {M.~G.}\ \bibnamefont {Genoni}}, \bibinfo {author} {\bibfnamefont {M.~A.}\
+  \bibnamefont {Ricci}}, \ and\ \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {Barbieri}},\ }\href {\doibase 10.1364/OPTICA.5.001171}
+  {\bibfield  {journal} {\bibinfo  {journal} {Optica}\ }\textbf {\bibinfo
+  {volume} {5}},\ \bibinfo {pages} {1171} (\bibinfo {year} {2018})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Roccia}\ \emph {et~al.}(2017)\citenamefont {Roccia},
+  \citenamefont {Gianani}, \citenamefont {Mancino}, \citenamefont {Sbroscia},
+  \citenamefont {Somma}, \citenamefont {Genoni},\ and\ \citenamefont
+  {Barbieri}}]{roccia2017entangling}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
+  {Roccia}}, \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont {Gianani}},
+  \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Mancino}}, \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {Sbroscia}}, \bibinfo {author}
+  {\bibfnamefont {F.}~\bibnamefont {Somma}}, \bibinfo {author} {\bibfnamefont
+  {M.~G.}\ \bibnamefont {Genoni}}, \ and\ \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {Barbieri}},\ }\href@noop {} {\bibfield  {journal}
+  {\bibinfo  {journal} {Quantum Science and Technology}\ }\textbf {\bibinfo
+  {volume} {3}},\ \bibinfo {pages} {01LT01} (\bibinfo {year}
+  {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Cimini}\ \emph
+  {et~al.}(2019{\natexlab{a}})\citenamefont {Cimini}, \citenamefont {Gianani},
+  \citenamefont {Ruggiero}, \citenamefont {Gasperi}, \citenamefont {Sbroscia},
+  \citenamefont {Roccia}, \citenamefont {Tofani}, \citenamefont {Bruni},
+  \citenamefont {Ricci},\ and\ \citenamefont {Barbieri}}]{cimini2019quantum}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {Cimini}}, \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont {Gianani}},
+  \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Ruggiero}}, \bibinfo
+  {author} {\bibfnamefont {T.}~\bibnamefont {Gasperi}}, \bibinfo {author}
+  {\bibfnamefont {M.}~\bibnamefont {Sbroscia}}, \bibinfo {author}
+  {\bibfnamefont {E.}~\bibnamefont {Roccia}}, \bibinfo {author} {\bibfnamefont
+  {D.}~\bibnamefont {Tofani}}, \bibinfo {author} {\bibfnamefont
+  {F.}~\bibnamefont {Bruni}}, \bibinfo {author} {\bibfnamefont {M.~A.}\
+  \bibnamefont {Ricci}}, \ and\ \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {Barbieri}},\ }\href@noop {} {\bibfield  {journal}
+  {\bibinfo  {journal} {Physical Review A}\ }\textbf {\bibinfo {volume} {99}},\
+  \bibinfo {pages} {053817} (\bibinfo {year} {2019}{\natexlab{a}})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Cimini}\ \emph
+  {et~al.}(2019{\natexlab{b}})\citenamefont {Cimini}, \citenamefont {Mellini},
+  \citenamefont {Rampioni}, \citenamefont {Sbroscia}, \citenamefont {Leoni},
+  \citenamefont {Barbieri},\ and\ \citenamefont
+  {Gianani}}]{cimini2019adaptive}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {Cimini}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Mellini}},
+  \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Rampioni}}, \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {Sbroscia}}, \bibinfo {author}
+  {\bibfnamefont {L.}~\bibnamefont {Leoni}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {Barbieri}}, \ and\ \bibinfo {author} {\bibfnamefont
+  {I.}~\bibnamefont {Gianani}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo
+   {journal} {Optics Express}\ }\textbf {\bibinfo {volume} {27}},\ \bibinfo
+  {pages} {35245} (\bibinfo {year} {2019}{\natexlab{b}})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Vidrighin}\ \emph {et~al.}(2014)\citenamefont
+  {Vidrighin}, \citenamefont {Donati}, \citenamefont {Genoni}, \citenamefont
+  {Jin}, \citenamefont {Kolthammer}, \citenamefont {Kim}, \citenamefont
+  {Datta}, \citenamefont {Barbieri},\ and\ \citenamefont
+  {Walmsley}}]{Vidrighin}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~D.}\ \bibnamefont
+  {Vidrighin}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Donati}},
+  \bibinfo {author} {\bibfnamefont {M.~G.}\ \bibnamefont {Genoni}}, \bibinfo
+  {author} {\bibfnamefont {X.-M.}\ \bibnamefont {Jin}}, \bibinfo {author}
+  {\bibfnamefont {W.~S.}\ \bibnamefont {Kolthammer}}, \bibinfo {author}
+  {\bibfnamefont {M.}~\bibnamefont {Kim}}, \bibinfo {author} {\bibfnamefont
+  {A.}~\bibnamefont {Datta}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {Barbieri}}, \ and\ \bibinfo {author} {\bibfnamefont
+  {I.~A.}\ \bibnamefont {Walmsley}},\ }\href {\doibase 10.1038/ncomms4532}
+  {\bibfield  {journal} {\bibinfo  {journal} {Nature Communications}\ }\textbf
+  {\bibinfo {volume} {5}} (\bibinfo {year} {2014}),\
+  10.1038/ncomms4532}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Genoni}\ \emph {et~al.}(2011)\citenamefont {Genoni},
+  \citenamefont {Olivares},\ and\ \citenamefont
+  {Paris}}]{PhysRevLett.106.153603}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~G.}\ \bibnamefont
+  {Genoni}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Olivares}}, \
+  and\ \bibinfo {author} {\bibfnamefont {M.~G.~A.}\ \bibnamefont {Paris}},\
+  }\href {\doibase 10.1103/PhysRevLett.106.153603} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {106}},\
+  \bibinfo {pages} {153603} (\bibinfo {year} {2011})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Matsuzaki}\ \emph {et~al.}(2011)\citenamefont
+  {Matsuzaki}, \citenamefont {Benjamin},\ and\ \citenamefont
+  {Fitzsimons}}]{PhysRevA.84.012103}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Matsuzaki}}, \bibinfo {author} {\bibfnamefont {S.~C.}\ \bibnamefont
+  {Benjamin}}, \ and\ \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Fitzsimons}},\ }\href {\doibase 10.1103/PhysRevA.84.012103} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev. A}\ }\textbf {\bibinfo {volume}
+  {84}},\ \bibinfo {pages} {012103} (\bibinfo {year} {2011})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Goldberg}\ \emph {et~al.}(2020)\citenamefont
+  {Goldberg}, \citenamefont {Gianani}, \citenamefont {Barbieri}, \citenamefont
+  {Sciarrino}, \citenamefont {Steinberg},\ and\ \citenamefont
+  {Spagnolo}}]{goldberg2020multiphase}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~Z.}\ \bibnamefont
+  {Goldberg}}, \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont {Gianani}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Barbieri}}, \bibinfo
+  {author} {\bibfnamefont {F.}~\bibnamefont {Sciarrino}}, \bibinfo {author}
+  {\bibfnamefont {A.~M.}\ \bibnamefont {Steinberg}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {N.}~\bibnamefont {Spagnolo}},\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {Physical Review A}\ }\textbf {\bibinfo
+  {volume} {102}},\ \bibinfo {pages} {022230} (\bibinfo {year}
+  {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Rubio}\ \emph {et~al.}(2020)\citenamefont {Rubio},
+  \citenamefont {Knott}, \citenamefont {Proctor},\ and\ \citenamefont
+  {Dunningham}}]{rubio2020quantum}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Rubio}}, \bibinfo {author} {\bibfnamefont {P.~A.}\ \bibnamefont {Knott}},
+  \bibinfo {author} {\bibfnamefont {T.~J.}\ \bibnamefont {Proctor}}, \ and\
+  \bibinfo {author} {\bibfnamefont {J.~A.}\ \bibnamefont {Dunningham}},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Journal of Physics
+  A: Mathematical and Theoretical}\ }\textbf {\bibinfo {volume} {53}},\
+  \bibinfo {pages} {344001} (\bibinfo {year} {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Rubio}\ and\ \citenamefont
+  {Dunningham}(2019)}]{rubio2019limited}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Rubio}}\ and\ \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Dunningham}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {New Journal of Physics}\ }\textbf {\bibinfo {volume} {21}},\ \bibinfo
+  {pages} {043037} (\bibinfo {year} {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Rubio}\ and\ \citenamefont
+  {Dunningham}(2020)}]{rubio2020bayesian}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Rubio}}\ and\ \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Dunningham}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Physical Review A}\ }\textbf {\bibinfo {volume} {101}},\ \bibinfo {pages}
+  {032114} (\bibinfo {year} {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Wiseman}(1995)}]{wiseman1995adaptive}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.~M.}\ \bibnamefont
+  {Wiseman}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Physical Review Letters}\ }\textbf {\bibinfo {volume} {75}},\ \bibinfo
+  {pages} {4587} (\bibinfo {year} {1995})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Berry}\ and\ \citenamefont
+  {Wiseman}(2000)}]{berry2000optimal}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~W.}\ \bibnamefont
+  {Berry}}\ and\ \bibinfo {author} {\bibfnamefont {H.~M.}\ \bibnamefont
+  {Wiseman}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Physical review letters}\ }\textbf {\bibinfo {volume} {85}},\ \bibinfo
+  {pages} {5098} (\bibinfo {year} {2000})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Berni}\ \emph {et~al.}(2015)\citenamefont {Berni},
+  \citenamefont {Gehring}, \citenamefont {Nielsen}, \citenamefont
+  {H{\"a}ndchen}, \citenamefont {Paris},\ and\ \citenamefont
+  {Andersen}}]{berni2015ab}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~A.}\ \bibnamefont
+  {Berni}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Gehring}},
+  \bibinfo {author} {\bibfnamefont {B.~M.}\ \bibnamefont {Nielsen}}, \bibinfo
+  {author} {\bibfnamefont {V.}~\bibnamefont {H{\"a}ndchen}}, \bibinfo {author}
+  {\bibfnamefont {M.~G.}\ \bibnamefont {Paris}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {U.~L.}\ \bibnamefont {Andersen}},\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {Nature Photonics}\ }\textbf {\bibinfo
+  {volume} {9}},\ \bibinfo {pages} {577} (\bibinfo {year} {2015})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Cimini}\ \emph
+  {et~al.}(2019{\natexlab{c}})\citenamefont {Cimini}, \citenamefont {Mellini},
+  \citenamefont {Rampioni}, \citenamefont {Sbroscia}, \citenamefont {Leoni},
+  \citenamefont {Barbieri},\ and\ \citenamefont {Gianani}}]{Cimini:19}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {Cimini}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Mellini}},
+  \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Rampioni}}, \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {Sbroscia}}, \bibinfo {author}
+  {\bibfnamefont {L.}~\bibnamefont {Leoni}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {Barbieri}}, \ and\ \bibinfo {author} {\bibfnamefont
+  {I.}~\bibnamefont {Gianani}},\ }\href {\doibase 10.1364/OE.27.035245}
+  {\bibfield  {journal} {\bibinfo  {journal} {Opt. Express}\ }\textbf {\bibinfo
+  {volume} {27}},\ \bibinfo {pages} {35245} (\bibinfo {year}
+  {2019}{\natexlab{c}})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hentschel}\ and\ \citenamefont
+  {Sanders}(2011)}]{hentschel2011efficient}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Hentschel}}\ and\ \bibinfo {author} {\bibfnamefont {B.~C.}\ \bibnamefont
+  {Sanders}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Physical Review Letters}\ }\textbf {\bibinfo {volume} {107}},\ \bibinfo
+  {pages} {233601} (\bibinfo {year} {2011})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Lovett}\ \emph {et~al.}(2013)\citenamefont {Lovett},
+  \citenamefont {Crosnier}, \citenamefont {Perarnau-Llobet},\ and\
+  \citenamefont {Sanders}}]{lovett2013differential}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.~B.}\ \bibnamefont
+  {Lovett}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Crosnier}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Perarnau-Llobet}}, \ and\
+  \bibinfo {author} {\bibfnamefont {B.~C.}\ \bibnamefont {Sanders}},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physical Review
+  Letters}\ }\textbf {\bibinfo {volume} {110}},\ \bibinfo {pages} {220501}
+  (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hentschel}\ and\ \citenamefont
+  {Sanders}(2009)}]{hentschel2009adaptive}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Hentschel}}\ and\ \bibinfo {author} {\bibfnamefont {B.~C.}\ \bibnamefont
+  {Sanders}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Physical Review Letters}\ }\textbf {\bibinfo {volume} {104}},\ \bibinfo
+  {pages} {063603} (\bibinfo {year} {2009})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Lumino}\ \emph {et~al.}(2018)\citenamefont {Lumino},
+  \citenamefont {Polino}, \citenamefont {Rab}, \citenamefont {Milani},
+  \citenamefont {Spagnolo}, \citenamefont {Wiebe},\ and\ \citenamefont
+  {Sciarrino}}]{piccoloLume}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Lumino}}, \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Polino}},
+  \bibinfo {author} {\bibfnamefont {A.~S.}\ \bibnamefont {Rab}}, \bibinfo
+  {author} {\bibfnamefont {G.}~\bibnamefont {Milani}}, \bibinfo {author}
+  {\bibfnamefont {N.}~\bibnamefont {Spagnolo}}, \bibinfo {author}
+  {\bibfnamefont {N.}~\bibnamefont {Wiebe}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {F.}~\bibnamefont {Sciarrino}},\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {Physical Review Applied}\ }\textbf {\bibinfo
+  {volume} {10}},\ \bibinfo {pages} {044033} (\bibinfo {year}
+  {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Rambhatla}\ \emph {et~al.}(2020)\citenamefont
+  {Rambhatla}, \citenamefont {D'Aurelio}, \citenamefont {Valeri}, \citenamefont
+  {Polino}, \citenamefont {Spagnolo},\ and\ \citenamefont
+  {Sciarrino}}]{rambhatla2020adaptive}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Rambhatla}}, \bibinfo {author} {\bibfnamefont {S.~E.}\ \bibnamefont
+  {D'Aurelio}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Valeri}},
+  \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Polino}}, \bibinfo
+  {author} {\bibfnamefont {N.}~\bibnamefont {Spagnolo}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {F.}~\bibnamefont {Sciarrino}},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {Physical Review Research}\
+  }\textbf {\bibinfo {volume} {2}},\ \bibinfo {pages} {033078} (\bibinfo {year}
+  {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Armen}\ \emph {et~al.}(2002)\citenamefont {Armen},
+  \citenamefont {Au}, \citenamefont {Stockton}, \citenamefont {Doherty},\ and\
+  \citenamefont {Mabuchi}}]{armen2002adaptive}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~A.}\ \bibnamefont
+  {Armen}}, \bibinfo {author} {\bibfnamefont {J.~K.}\ \bibnamefont {Au}},
+  \bibinfo {author} {\bibfnamefont {J.~K.}\ \bibnamefont {Stockton}}, \bibinfo
+  {author} {\bibfnamefont {A.~C.}\ \bibnamefont {Doherty}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {H.}~\bibnamefont {Mabuchi}},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {Physical Review Letters}\
+  }\textbf {\bibinfo {volume} {89}},\ \bibinfo {pages} {133602} (\bibinfo
+  {year} {2002})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Higgins}\ \emph {et~al.}(2007)\citenamefont
+  {Higgins}, \citenamefont {Berry}, \citenamefont {Bartlett}, \citenamefont
+  {Wiseman},\ and\ \citenamefont {Pryde}}]{higgins2007entanglement}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~L.}\ \bibnamefont
+  {Higgins}}, \bibinfo {author} {\bibfnamefont {D.~W.}\ \bibnamefont {Berry}},
+  \bibinfo {author} {\bibfnamefont {S.~D.}\ \bibnamefont {Bartlett}}, \bibinfo
+  {author} {\bibfnamefont {H.~M.}\ \bibnamefont {Wiseman}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {G.~J.}\ \bibnamefont {Pryde}},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {Nature}\ }\textbf {\bibinfo
+  {volume} {450}},\ \bibinfo {pages} {393} (\bibinfo {year}
+  {2007})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Daryanoosh}\ \emph {et~al.}(2018)\citenamefont
+  {Daryanoosh}, \citenamefont {Slussarenko}, \citenamefont {Berry},
+  \citenamefont {Wiseman},\ and\ \citenamefont
+  {Pryde}}]{daryanoosh2018experimental}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Daryanoosh}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Slussarenko}}, \bibinfo {author} {\bibfnamefont {D.~W.}\ \bibnamefont
+  {Berry}}, \bibinfo {author} {\bibfnamefont {H.~M.}\ \bibnamefont {Wiseman}},
+  \ and\ \bibinfo {author} {\bibfnamefont {G.~J.}\ \bibnamefont {Pryde}},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Nature
+  Communications}\ }\textbf {\bibinfo {volume} {9}},\ \bibinfo {pages} {4606}
+  (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Wheatley}\ \emph {et~al.}(2010)\citenamefont
+  {Wheatley}, \citenamefont {Berry}, \citenamefont {Yonezawa}, \citenamefont
+  {Nakane}, \citenamefont {Arao}, \citenamefont {Pope}, \citenamefont {Ralph},
+  \citenamefont {Wiseman}, \citenamefont {Furusawa},\ and\ \citenamefont
+  {Huntington}}]{wheatley2010adaptive}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Wheatley}}, \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Berry}},
+  \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Yonezawa}}, \bibinfo
+  {author} {\bibfnamefont {D.}~\bibnamefont {Nakane}}, \bibinfo {author}
+  {\bibfnamefont {H.}~\bibnamefont {Arao}}, \bibinfo {author} {\bibfnamefont
+  {D.}~\bibnamefont {Pope}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Ralph}}, \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Wiseman}},
+  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Furusawa}}, \ and\
+  \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Huntington}},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physical Review
+  Letters}\ }\textbf {\bibinfo {volume} {104}},\ \bibinfo {pages} {093601}
+  (\bibinfo {year} {2010})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Valeri}\ \emph {et~al.}(2020)\citenamefont {Valeri},
+  \citenamefont {Polino}, \citenamefont {Poderini}, \citenamefont {Gianani},
+  \citenamefont {Corrielli}, \citenamefont {Crespi}, \citenamefont {Osellame},
+  \citenamefont {Spagnolo},\ and\ \citenamefont {Sciarrino}}]{Valeri2020}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Valeri}}, \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Polino}},
+  \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Poderini}}, \bibinfo
+  {author} {\bibfnamefont {I.}~\bibnamefont {Gianani}}, \bibinfo {author}
+  {\bibfnamefont {G.}~\bibnamefont {Corrielli}}, \bibinfo {author}
+  {\bibfnamefont {A.}~\bibnamefont {Crespi}}, \bibinfo {author} {\bibfnamefont
+  {R.}~\bibnamefont {Osellame}}, \bibinfo {author} {\bibfnamefont
+  {N.}~\bibnamefont {Spagnolo}}, \ and\ \bibinfo {author} {\bibfnamefont
+  {F.}~\bibnamefont {Sciarrino}},\ }\href {\doibase 10.1038/s41534-020-00326-6}
+  {\bibfield  {journal} {\bibinfo  {journal} {npj Quantum Information}\
+  }\textbf {\bibinfo {volume} {6}},\ \bibinfo {pages} {92} (\bibinfo {year}
+  {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Goldberg}\ and\ \citenamefont
+  {James}(2018)}]{goldberg2018quantum}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~Z.}\ \bibnamefont
+  {Goldberg}}\ and\ \bibinfo {author} {\bibfnamefont {D.~F.}\ \bibnamefont
+  {James}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Physical Review A}\ }\textbf {\bibinfo {volume} {98}},\ \bibinfo {pages}
+  {032113} (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Goldberg}\ \emph {et~al.}(2021)\citenamefont
+  {Goldberg}, \citenamefont {Klimov}, \citenamefont {Leuchs},\ and\
+  \citenamefont {S{\'a}nchez-Soto}}]{goldberg2021rotation}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~Z.}\ \bibnamefont
+  {Goldberg}}, \bibinfo {author} {\bibfnamefont {A.~B.}\ \bibnamefont
+  {Klimov}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Leuchs}}, \
+  and\ \bibinfo {author} {\bibfnamefont {L.~L.}\ \bibnamefont
+  {S{\'a}nchez-Soto}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo
+  {journal} {Journal of Physics: Photonics}\ }\textbf {\bibinfo {volume} {3}},\
+  \bibinfo {pages} {022008} (\bibinfo {year} {2021})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {D'Ambrosio}\ \emph {et~al.}(2013)\citenamefont
+  {D'Ambrosio}, \citenamefont {Spagnolo}, \citenamefont {{Del Re}},
+  \citenamefont {Slussarenko}, \citenamefont {Li}, \citenamefont {Kwek},
+  \citenamefont {Marrucci}, \citenamefont {Walborn}, \citenamefont {Aolita},\
+  and\ \citenamefont {Sciarrino}}]{dambrosio_gear2013}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {D'Ambrosio}}, \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Spagnolo}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {{Del Re}}},
+  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Slussarenko}}, \bibinfo
+  {author} {\bibfnamefont {Y.}~\bibnamefont {Li}}, \bibinfo {author}
+  {\bibfnamefont {L.~C.}\ \bibnamefont {Kwek}}, \bibinfo {author}
+  {\bibfnamefont {L.}~\bibnamefont {Marrucci}}, \bibinfo {author}
+  {\bibfnamefont {S.~P.}\ \bibnamefont {Walborn}}, \bibinfo {author}
+  {\bibfnamefont {L.}~\bibnamefont {Aolita}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {F.}~\bibnamefont {Sciarrino}},\ }\href
+  {https://www.nature.com/articles/ncomms3432} {\bibfield  {journal} {\bibinfo
+  {journal} {Nat. Comm.}\ }\textbf {\bibinfo {volume} {4}},\ \bibinfo {pages}
+  {2432} (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Cimini}\ \emph {et~al.}(2021)\citenamefont {Cimini},
+  \citenamefont {Polino}, \citenamefont {Belliardo}, \citenamefont {Hoch},
+  \citenamefont {Piccirillo}, \citenamefont {Spagnolo}, \citenamefont
+  {Giovannetti},\ and\ \citenamefont {Sciarrino}}]{cimini2021non}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {Cimini}}, \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Polino}},
+  \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Belliardo}}, \bibinfo
+  {author} {\bibfnamefont {F.}~\bibnamefont {Hoch}}, \bibinfo {author}
+  {\bibfnamefont {B.}~\bibnamefont {Piccirillo}}, \bibinfo {author}
+  {\bibfnamefont {N.}~\bibnamefont {Spagnolo}}, \bibinfo {author}
+  {\bibfnamefont {V.}~\bibnamefont {Giovannetti}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {F.}~\bibnamefont {Sciarrino}},\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {arXiv preprint arXiv:2110.02908}\ } (\bibinfo
+  {year} {2021})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Fickler}\ \emph {et~al.}(2016)\citenamefont
+  {Fickler}, \citenamefont {Campbell}, \citenamefont {Buchler}, \citenamefont
+  {Lam},\ and\ \citenamefont {Zeilinger}}]{Fickler13642}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Fickler}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Campbell}},
+  \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {Buchler}}, \bibinfo
+  {author} {\bibfnamefont {P.~K.}\ \bibnamefont {Lam}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {A.}~\bibnamefont {Zeilinger}},\ }\href {\doibase
+  10.1073/pnas.1616889113} {\bibfield  {journal} {\bibinfo  {journal}
+  {Proceedings of the National Academy of Sciences}\ }\textbf {\bibinfo
+  {volume} {113}},\ \bibinfo {pages} {13642} (\bibinfo {year}
+  {2016})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Barnett}\ and\ \citenamefont
+  {Zambrini}(2006)}]{barnett2006resolution}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.~M.}\ \bibnamefont
+  {Barnett}}\ and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Zambrini}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Journal of Modern Optics}\ }\textbf {\bibinfo {volume} {53}},\ \bibinfo
+  {pages} {613} (\bibinfo {year} {2006})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Jha}\ \emph {et~al.}(2011)\citenamefont {Jha},
+  \citenamefont {Agarwal},\ and\ \citenamefont {Boyd}}]{jha2011supersensitive}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~K.}\ \bibnamefont
+  {Jha}}, \bibinfo {author} {\bibfnamefont {G.~S.}\ \bibnamefont {Agarwal}}, \
+  and\ \bibinfo {author} {\bibfnamefont {R.~W.}\ \bibnamefont {Boyd}},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physical Review
+  A}\ }\textbf {\bibinfo {volume} {83}},\ \bibinfo {pages} {053829} (\bibinfo
+  {year} {2011})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hiekkam\"aki}\ \emph {et~al.}(2021)\citenamefont
+  {Hiekkam\"aki}, \citenamefont {Bouchard},\ and\ \citenamefont
+  {Fickler}}]{PhysRevLett.127.263601}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Hiekkam\"aki}}, \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Bouchard}}, \ and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Fickler}},\ }\href {\doibase 10.1103/PhysRevLett.127.263601} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo
+  {volume} {127}},\ \bibinfo {pages} {263601} (\bibinfo {year}
+  {2021})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Helstrom}\ and\ \citenamefont
+  {Helstrom}(1976)}]{helstrom1976quantum}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.~W.}\ \bibnamefont
+  {Helstrom}}\ and\ \bibinfo {author} {\bibfnamefont {C.~W.}\ \bibnamefont
+  {Helstrom}},\ }\href@noop {} {\emph {\bibinfo {title} {Quantum detection and
+  estimation theory}}},\ Vol.~\bibinfo {volume} {84}\ (\bibinfo  {publisher}
+  {Academic press New York},\ \bibinfo {year} {1976})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Box}\ and\ \citenamefont
+  {Tiao}(2011)}]{box2011bayesian}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.~E.}\ \bibnamefont
+  {Box}}\ and\ \bibinfo {author} {\bibfnamefont {G.~C.}\ \bibnamefont {Tiao}},\
+  }\href@noop {} {\emph {\bibinfo {title} {Bayesian inference in statistical
+  analysis}}},\ Vol.~\bibinfo {volume} {40}\ (\bibinfo  {publisher} {John Wiley
+  \& Sons},\ \bibinfo {year} {2011})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {D'Aurelio}\ \emph {et~al.}(2022)\citenamefont
+  {D'Aurelio}, \citenamefont {Valeri}, \citenamefont {Polino}, \citenamefont
+  {Cimini}, \citenamefont {Gianani}, \citenamefont {Barbieri}, \citenamefont
+  {Corrielli}, \citenamefont {Crespi}, \citenamefont {Osellame}, \citenamefont
+  {Sciarrino} \emph {et~al.}}]{d2022experimental}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.~E.}\ \bibnamefont
+  {D'Aurelio}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Valeri}},
+  \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Polino}}, \bibinfo
+  {author} {\bibfnamefont {V.}~\bibnamefont {Cimini}}, \bibinfo {author}
+  {\bibfnamefont {I.}~\bibnamefont {Gianani}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {Barbieri}}, \bibinfo {author} {\bibfnamefont
+  {G.}~\bibnamefont {Corrielli}}, \bibinfo {author} {\bibfnamefont
+  {A.}~\bibnamefont {Crespi}}, \bibinfo {author} {\bibfnamefont
+  {R.}~\bibnamefont {Osellame}}, \bibinfo {author} {\bibfnamefont
+  {F.}~\bibnamefont {Sciarrino}},  \emph {et~al.},\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {Quantum Science and Technology}\ } (\bibinfo
+  {year} {2022})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Granade}\ \emph {et~al.}(2012)\citenamefont
+  {Granade}, \citenamefont {Ferrie}, \citenamefont {Wiebe},\ and\ \citenamefont
+  {Cory}}]{granade2012robust}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.~E.}\ \bibnamefont
+  {Granade}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Ferrie}},
+  \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Wiebe}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {D.~G.}\ \bibnamefont {Cory}},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {New Journal of Physics}\ }\textbf
+  {\bibinfo {volume} {14}},\ \bibinfo {pages} {103013} (\bibinfo {year}
+  {2012})}\BibitemShut {NoStop}%
+\bibitem [{SI()}]{SI}%
+  \BibitemOpen
+  \href@noop {} {}\bibinfo {note} {The Supplemental Material accompanying the
+  paper, available from XXXX,}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Marrucci}\ \emph {et~al.}(2006)\citenamefont
+  {Marrucci}, \citenamefont {Manzo},\ and\ \citenamefont
+  {Paparo}}]{marrucci-2006spin-to-orbital}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Marrucci}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Manzo}}, \
+  and\ \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Paparo}},\ }\href
+  {\doibase 10.1103/PhysRevLett.96.163905} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {96}},\ \bibinfo
+  {pages} {163905} (\bibinfo {year} {2006})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {G\'orecki}\ \emph {et~al.}(2020)\citenamefont
+  {G\'orecki}, \citenamefont {Demkowicz-Dobrza\ifmmode~\acute{n}\else
+  \'{n}\fi{}ski}, \citenamefont {Wiseman},\ and\ \citenamefont
+  {Berry}}]{PhysRevLett.124.030501}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.}~\bibnamefont
+  {G\'orecki}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Demkowicz-Dobrza\ifmmode~\acute{n}\else \'{n}\fi{}ski}}, \bibinfo {author}
+  {\bibfnamefont {H.~M.}\ \bibnamefont {Wiseman}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {D.~W.}\ \bibnamefont {Berry}},\ }\href {\doibase
+  10.1103/PhysRevLett.124.030501} {\bibfield  {journal} {\bibinfo  {journal}
+  {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {124}},\ \bibinfo {pages}
+  {030501} (\bibinfo {year} {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Belliardo}(2022)}]{github}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Belliardo}},\ }\href@noop {} {\enquote {\bibinfo {title} {Bayesian
+  multiparameter},}\ }\bibinfo {howpublished}
+  {\url{https://github.com/fedebell/AppuntiDottorato/tree/main/bayesian_multiparameter}}
+  (\bibinfo {year} {2022})\BibitemShut {NoStop}%
+\end{thebibliography}%
